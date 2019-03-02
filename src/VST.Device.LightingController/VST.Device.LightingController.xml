@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VST.Device.LightingController</name>
+    </assembly>
+    <members>
+        <member name="T:VST.Device.LightingController.StrobeModes">
+            <summary>
+            Hello
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.F1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.F2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.F3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.F4">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.F5">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.F6">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.F7">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.F8">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.F9">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:VST.Device.LightingController.StrobeModes.F10">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:VST.Device.LightingController.ILightingController">
+            <summary>
+            提供一般控制器功能的Interface
+            </summary>
+        </member>
+    </members>
+</doc>

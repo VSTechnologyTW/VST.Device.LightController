@@ -1,0 +1,9 @@
+F:\Source\Repos\LightingController\src\VST.Device.LightingController\bin\Debug\netstandard2.0\VST.Device.LightingController.deps.json
+F:\Source\Repos\LightingController\src\VST.Device.LightingController\bin\Debug\netstandard2.0\VST.Device.LightingController.dll
+F:\Source\Repos\LightingController\src\VST.Device.LightingController\bin\Debug\netstandard2.0\VST.Device.LightingController.pdb
+F:\Source\Repos\LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.csprojAssemblyReference.cache
+F:\Source\Repos\LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.csproj.CoreCompileInputs.cache
+F:\Source\Repos\LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.AssemblyInfoInputs.cache
+F:\Source\Repos\LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.AssemblyInfo.cs
+F:\Source\Repos\LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.dll
+F:\Source\Repos\LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.pdb

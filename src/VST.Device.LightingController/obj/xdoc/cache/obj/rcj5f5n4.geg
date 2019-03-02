@@ -1,0 +1,10 @@
+id: VST.Device.LightingController
+language: CSharp
+name:
+  Default: VST.Device.LightingController
+qualifiedName:
+  Default: VST.Device.LightingController
+type: Assembly
+modifiers: {}
+items: []
+references: {}
