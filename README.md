@@ -1,1 +1,1 @@
-# VST.Device.LightController
+# VST.Device.LightingController
