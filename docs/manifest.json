@@ -4,6 +4,174 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.ChannelController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.ChannelController.html",
+          "hash": "Cqf7nemVPG9Y3w+tVU5s8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.CommunicationInterfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.CommunicationInterfaces.html",
+          "hash": "uTfBHGJ/tQWvxbiggYqiEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.DefaultLightingController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.DefaultLightingController.html",
+          "hash": "J364BoobnSRfzdEhiEN+JQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.EthernetLightingController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.EthernetLightingController.html",
+          "hash": "QnKCXkqFJJijIlkdqj+raw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.IChannelController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.IChannelController.html",
+          "hash": "GiGBI4hRZDBWiLaTJvwPkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.ICommunicationInterfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.ICommunicationInterfaces.html",
+          "hash": "E7oCLInyWwq7OPvAWxGdRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.IEthernet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.IEthernet.html",
+          "hash": "7IaHZ3tNZrOzvReAHEVLUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.IInitialize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.IInitialize.html",
+          "hash": "0EizTaZQZ30/yShImG3rEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.ILightingController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.ILightingController.html",
+          "hash": "uOwlazSq2I8obndpVDNv5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.IRS232.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.IRS232.html",
+          "hash": "EyEaboar6kEe5uElHOE/Ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.LightingControllerProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.LightingControllerProvider.html",
+          "hash": "3IIcHP4508fHYlbnTxd1Lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.Rs232LightingController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.Rs232LightingController.html",
+          "hash": "L8yMXYIYbN7k/9Q/K/sz6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.StrobeModes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.StrobeModes.html",
+          "hash": "BJL+yUMvsi4LVglCFWw0cA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VST.Device.LightingController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VST.Device.LightingController.html",
+          "hash": "Sn20wjTpUHfrDcObVffEvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -21,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "eWl/m2iB2mgjZPbLc4xDqw=="
+          "hash": "PkW+IowIEuvBKN7LwkRKTQ=="
         }
       },
       "is_incremental": false,
@@ -36,7 +204,7 @@
           "hash": "/prlHD9/nm7PBKMZNhLmhw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,7 +228,7 @@
           "hash": "QU3rStBpTvmE6BWO7YXFUw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -90,6 +258,11 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ManagedReferenceDocumentProcessor disable incremental build because last build doesn't contain version .",
           "incrementalPhase": "build"
         }
       }

@@ -635,11 +635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Source\\Repos\\LightingController\\src\\VST.Device.LightingController\\VST.Device.LightingController.csproj",
+      "projectUniqueName": "F:\\Source\\Repos\\VST.Device.LightingController\\src\\VST.Device.LightingController\\VST.Device.LightingController.csproj",
       "projectName": "VST.Device.LightingController",
-      "projectPath": "F:\\Source\\Repos\\LightingController\\src\\VST.Device.LightingController\\VST.Device.LightingController.csproj",
+      "projectPath": "F:\\Source\\Repos\\VST.Device.LightingController\\src\\VST.Device.LightingController\\VST.Device.LightingController.csproj",
       "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-      "outputPath": "F:\\Source\\Repos\\LightingController\\src\\VST.Device.LightingController\\obj\\",
+      "outputPath": "F:\\Source\\Repos\\VST.Device.LightingController\\src\\VST.Device.LightingController\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
