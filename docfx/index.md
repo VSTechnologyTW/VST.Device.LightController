@@ -4,13 +4,13 @@
 
 ## 討論主題
 
-本文件將說明如何使用VAL控制器，內容分為四個主題:
+本文件將說明如何使用VAL控制器，內容分為三個主題:
 
-1. 通訊設定(包含RS232以及Ethernet)
+1. [通訊設定(包含RS232以及Ethernet)][1]
 
-2. 函式庫使用方法
+2. [函式庫使用方法][2]
 
-3. 手動建立連線與Command組成規則
+3. [手動建立連線與Command組成規則][3]
 
 ## 開發環境需求
 
@@ -22,3 +22,6 @@
 
 [Visual Studio 2017]:   https://visualstudio.microsoft.com/zh-hant/vs/  "Visual Studio 2017"
 [VST Taiwan]:           https://vst.co.jp/zh-hant/                      "VST Taiwan(台灣輝視科技)"
+[1]:                    tutorial/通訊介面設定.md
+[2]:                    tutorial/函式庫使用方法.md
+[3]:                    tutorial/手動建立連線與Command組成規則.md

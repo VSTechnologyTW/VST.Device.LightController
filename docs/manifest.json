@@ -234,10 +234,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "bCrH9teyEDL3vCwWCvYZ5w=="
+          "hash": "yygUrm/ZQJGeLF5dxY2MXw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -246,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "FgTeNYM1fn4aXpgBe7VXTA=="
+          "hash": "3mjHXqLuUSImfHcirhCaeA=="
         }
       },
       "is_incremental": false,
@@ -258,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorial/toc.html",
-          "hash": "RyAnN9uuhzMQuPU/NsFNYg=="
+          "hash": "rjQCLTytYj0T9O176ZAuCg=="
         }
       },
       "is_incremental": false,
@@ -270,10 +270,10 @@
       "output": {
         ".html": {
           "relative_path": "tutorial/函式庫使用方法.html",
-          "hash": "ZZxLAAfRP1jeOcIqaeEktw=="
+          "hash": "J2jn7AJAeQEq2RZs1xD0rQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -282,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorial/手動建立連線與Command組成規則.html",
-          "hash": "eO4BDc36hWdj5Bh4ldyDtg=="
+          "hash": "QHXSxYpMD0fVDMh2+keeew=="
         }
       },
       "is_incremental": true,
@@ -290,11 +290,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "tutorial/通訊介面.md",
+      "source_relative_path": "tutorial/通訊介面設定.md",
       "output": {
         ".html": {
-          "relative_path": "tutorial/通訊介面.html",
-          "hash": "SKINY0DCWqF45eqrYYAVEQ=="
+          "relative_path": "tutorial/通訊介面設定.html",
+          "hash": "4U8XE8YnXLPu4jUkSPQROQ=="
         }
       },
       "is_incremental": true,
@@ -308,22 +308,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
