@@ -17,3 +17,4 @@ D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\
 D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Release\net472\VST.Device.LightingController.csproj.CopyComplete
 D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Release\net472\VST.Device.LightingController.dll
 D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Release\net472\VST.Device.LightingController.pdb
+D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Release\net472\VST.Device.LightingController.csprojAssemblyReference.cache
