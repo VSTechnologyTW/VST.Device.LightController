@@ -29,3 +29,4 @@ DLL下載請參考[Release]頁面，函示庫的使用方法、控制器/PC端�
 [操作手冊]:      https://vstechnologytw.github.io/VST.Device.LightingController/
 [台灣輝視科技]:  https://vst.co.jp/zh-hant/
 [VAL]:          https://val-mvlight.com/
+[Release]:      https://github.com/VSTechnologyTW/VST.Device.LightingController/releases
