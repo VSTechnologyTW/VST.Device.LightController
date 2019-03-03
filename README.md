@@ -1,6 +1,6 @@
 # VST.Device.LightingController
 
-此函示庫由VST Taiwan(台灣輝視科技)負責開發與維護，提供可以遠程控制VAL的C#函示庫，包含了RS232以及Ethernet介面的控制器。
+此函示庫由VST Taiwan(台灣輝視科技)負責開發與維護，提供可以遠程控制VAL光源控制器的C#函示庫，包含了RS232以及Ethernet介面的控制器。
 
 適用型號包含:
 
