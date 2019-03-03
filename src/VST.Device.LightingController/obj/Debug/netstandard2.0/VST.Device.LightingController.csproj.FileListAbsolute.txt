@@ -16,3 +16,12 @@ F:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\
 F:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.AssemblyInfo.cs
 F:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.dll
 F:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.pdb
+D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\bin\Debug\netstandard2.0\VST.Device.LightingController.deps.json
+D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\bin\Debug\netstandard2.0\VST.Device.LightingController.dll
+D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\bin\Debug\netstandard2.0\VST.Device.LightingController.pdb
+D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.csproj.CoreCompileInputs.cache
+D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.AssemblyInfoInputs.cache
+D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.AssemblyInfo.cs
+D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.dll
+D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.pdb
+D:\Source\Repos\VST.Device.LightingController\src\VST.Device.LightingController\obj\Debug\netstandard2.0\VST.Device.LightingController.csprojAssemblyReference.cache

@@ -2,10 +2,15 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net472;net461</TargetFrameworks>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Jason Chou</Authors>
+    <Company>VST Taiwan</Company>
+    <Description>VAL lighting controller .NET library.</Description>
+    <Copyright>VST Taiwan 2019</Copyright>
+    <AssemblyVersion>0.1.1.0</AssemblyVersion>
+    <FileVersion>0.1.1.0</FileVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>0.1.1</Version>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">

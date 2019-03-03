@@ -189,7 +189,7 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -244,7 +244,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "q75Y4NW+0snNauKQGXVqZ+X6TLrAvg+Z318VPhCet0Z/iuCQ0Bw5Wro75JKhqB+gm2tEA9/qx3nl7tR5zPxSuQ==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -531,7 +531,7 @@
       ]
     },
     "System.Security.AccessControl/4.5.0": {
-      "sha512": "aVjTe36YkO8FzfNhMLoPEzv3gF9rphoW9ngFhG/MH4zzEPLx07sNrgCLwMP4Wx2leI6qarMrGv21OwQXYUKLmw==",
+      "sha512": "6RQtcT+TyDgLUFsAnmmdfRRGdLYKxSZGkSPOd052tvYFxOTMaQb6ANlwhGqZtNO52PosaCoXu7uatFneujAxmA==",
       "type": "package",
       "path": "system.security.accesscontrol/4.5.0",
       "files": [
@@ -573,7 +573,7 @@
       ]
     },
     "System.Security.Principal.Windows/4.5.0": {
-      "sha512": "WA9ETb/pY3BjnxKjBUHEgO59B7d/nnmjHFsqjJ2eDT780nD769CT1/bw2ia0Z6W7NqlcqokE6sKGKa6uw88XGA==",
+      "sha512": "hs2zF4tOQ3V4iQttVnLrnR/i8AOrrAgu2Gmp4/jNaE/+5hiZWDj20FK/m/OW3Itdi9XDvqf55WzHkiWYtOSUNg==",
       "type": "package",
       "path": "system.security.principal.windows/4.5.0",
       "files": [
@@ -633,13 +633,13 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.1.1",
     "restore": {
-      "projectUniqueName": "F:\\Source\\Repos\\VST.Device.LightingController\\src\\VST.Device.LightingController\\VST.Device.LightingController.csproj",
+      "projectUniqueName": "D:\\Source\\Repos\\VST.Device.LightingController\\src\\VST.Device.LightingController\\VST.Device.LightingController.csproj",
       "projectName": "VST.Device.LightingController",
-      "projectPath": "F:\\Source\\Repos\\VST.Device.LightingController\\src\\VST.Device.LightingController\\VST.Device.LightingController.csproj",
+      "projectPath": "D:\\Source\\Repos\\VST.Device.LightingController\\src\\VST.Device.LightingController\\VST.Device.LightingController.csproj",
       "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-      "outputPath": "F:\\Source\\Repos\\VST.Device.LightingController\\src\\VST.Device.LightingController\\obj\\",
+      "outputPath": "D:\\Source\\Repos\\VST.Device.LightingController\\src\\VST.Device.LightingController\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

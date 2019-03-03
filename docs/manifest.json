@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "F:/Source/Repos/VST.Device.LightingController/docfx",
+  "source_base_path": "D:/Source/Repos/VST.Device.LightingController/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -237,7 +237,7 @@
           "hash": "yygUrm/ZQJGeLF5dxY2MXw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -270,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorial/函式庫使用方法.html",
-          "hash": "J2jn7AJAeQEq2RZs1xD0rQ=="
+          "hash": "/VroXTL1OuHA1P2RwnEZzQ=="
         }
       },
       "is_incremental": true,
@@ -318,11 +318,11 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }
