@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Add your introductions here! </title>
+    <title>Command&#32068;&#25104;&#35215;&#21063; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Add your introductions here! ">
+    <meta name="title" content="Command&#32068;&#25104;&#35215;&#21063; ">
     <meta name="generator" content="docfx 2.40.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,8 +67,45 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="add-your-introductions-here">Add your introductions here!</h1>
+<h1 id="command組成規則">Command組成規則</h1>
 
+<hr>
+<h2 id="規則">規則</h2>
+<p>Command = @ + 通道Index + 指令 + 資料 + ID + Checksum + 分隔符號</p>
+<ul>
+<li>通道Index:從00~02，當設定為FF時表示對所有通道下指令</li>
+<li>指令 + 資料
+<ul>
+<li>F : 設定亮度 (0~255)</li>
+<li>S : 設定Strobe Mode (F1~F10)</li>
+<li>L : 設定On/Off(0~1)</li>
+</ul>
+</li>
+<li>ID
+<ul>
+<li>只有在設定亮度、Strobe Mode的時候要設定為00</li>
+</ul>
+</li>
+<li>Checksum
+<ul>
+<li>將前面的所有值進行加總，並取總和最後兩位。</li>
+</ul>
+</li>
+<li>分隔符號&lt;CR&gt;&lt;LF&gt;
+<ul>
+<li>是換行符號的意思，若使用字串輸入，請使用&quot;\r\n&quot;</li>
+</ul>
+</li>
+</ul>
+<p>舉以下例子:</p>
+<ul>
+<li><p>將Channel2的亮度值設定為75
+Command : @01F07500E4CRLF (ASCII)</p>
+</li>
+<li><p>將Channel1的Strobe Mode設定為F4
+Command : @00S0400B8CRLF (ASCII)</p>
+</li>
+</ul>
 </article>
           </div>
           
@@ -77,7 +114,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/master/docfx/tutorial/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/docfx/tutorial/&#25163;&#21205;&#24314;&#31435;&#36899;&#32218;&#33287;Command&#32068;&#25104;&#35215;&#21063;.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

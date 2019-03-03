@@ -41,7 +41,7 @@
       "default",
       "templates/default"
     ],
-    "dest": "../docs",
+    "dest": "../",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "postProcessors": [],
