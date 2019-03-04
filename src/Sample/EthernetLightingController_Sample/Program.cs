@@ -1,20 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VST.Device.LightingController;
 
-namespace RS232LightingController_Sample
+namespace EthernetLightingController_Sample
 {
     class Program
     {
         static void Main(string[] args)
         {
             // 建立控制器物件，給予控制器名稱以及通道數
-            var controller = new Rs232LightingController("VLP-2430-4", 4);
+            var controller = new EthernetLightingController("VLP-2430-4eN", 4);
 
-            // 打開指定的SerialPort通道
-            controller.Open("COM4");
+            // 打開指定的TcpClient通道
+            controller.Open("192.168.11.20");
 
             // 初始化所有通道的狀態
             // 亮度:0, Strobe Mode:F1, ON/OFF:OFF
@@ -28,6 +29,7 @@ namespace RS232LightingController_Sample
 
             // ON/OFF，將通道1開啟
             controller.SetOnOff(0, true);
+
 
         }
     }
