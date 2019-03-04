@@ -13,6 +13,7 @@ namespace VST.Device.LightingController
         public abstract EventHandler<string> CommandSent { get; set; }
         public abstract string HostName { get; protected set; }
         public abstract int Delay { get; protected set; }
+        public abstract bool AutoUpdate { get; set; }
         public abstract bool IsConnected { get; }
         public virtual string ModelName { get; protected set; } = "Default";
         public StrobeModes StrobeMode => StrobeModes.None;

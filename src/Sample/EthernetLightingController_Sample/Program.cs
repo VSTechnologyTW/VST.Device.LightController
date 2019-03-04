@@ -30,6 +30,13 @@ namespace EthernetLightingController_Sample
             // ON/OFF，將通道1開啟
             controller.SetOnOff(0, true);
 
+            // 更改數值後並不會立刻生效，必須在下一次開啟的指令，才會更新實際的亮度
+            controller.SetIntensity(0, 200);
+            controller.SetOnOff(0, true);
+
+            // 或者啟用AutoUpdate,此功能會在送出指令後接著送出SetONOFF(channel,true)的指令，預設是關閉的
+            controller.AutoUpdate = true;
+            controller.SetIntensity(1,0);
 
         }
     }

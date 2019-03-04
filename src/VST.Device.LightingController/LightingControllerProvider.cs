@@ -66,7 +66,7 @@ namespace VST.Device.LightingController
                 case "VLP-2430-3":
                     return new Rs232LightingController("VLP-2430-3", 3);
                 default:
-                    return null;
+                    throw new NotSupportedException("未知的控制器型號");
             }
         }
     }

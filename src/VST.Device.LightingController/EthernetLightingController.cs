@@ -17,6 +17,7 @@ namespace VST.Device.LightingController
         public override string HostName { get; protected set; } = "192.168.11.20";
 
         public override int Delay { get; protected set; } = 10;
+        public override bool AutoUpdate { get; set; }
 
         public override bool IsConnected => Client.Connected;
         public TcpClient Client { get; private set; }
@@ -76,6 +77,8 @@ namespace VST.Device.LightingController
             var message = $"{CommandHeaderStr}{channel:D2}F{intensity:D3}";
             var command = $"{message}{CheckSum(message)}{CommandEndStr}";
             SendCommand(command);
+            if (AutoUpdate)
+                SetOnOff(channel, true);
         }
 
         public override void SetStrobeMode(int channel, StrobeModes mode)
@@ -84,6 +87,8 @@ namespace VST.Device.LightingController
             var message = $"{CommandHeaderStr}{channel:D2}S{modeInt:D2}";
             var command = $"{message}{CheckSum(message)}{CommandEndStr}";
             SendCommand(command);
+            if (AutoUpdate)
+                SetOnOff(channel, true);
         }
 
         public override void SetOnOff(int channel, bool mode)

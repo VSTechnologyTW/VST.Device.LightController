@@ -26,6 +26,7 @@ namespace VST.Device.LightingController
         public override EventHandler<string> CommandSent { get; set; }
         public override string HostName { get; protected set; }
         public override int Delay { get; protected set; } = 10;
+        public override bool AutoUpdate { get; set; }
 
         public SerialPort Port { get; private set; }
 
@@ -64,7 +65,8 @@ namespace VST.Device.LightingController
             var message = $"{CommandHeaderStr}{channel:D2}F{intensity:D3}{0U:X2}";
             var command = $"{message}{CheckSum(message)}{CommandEndStr}";
             SendCommand(command);
-            SetOnOff(channel, true);
+            if (AutoUpdate)
+                SetOnOff(channel, true);
         }
 
         public override void SetStrobeMode(int channel, StrobeModes mode)
@@ -73,7 +75,8 @@ namespace VST.Device.LightingController
             var message = $"{CommandHeaderStr}{channel:D2}S{modeInt:D2}{0U:X2}";
             var command = $"{message}{CheckSum(message)}{CommandEndStr}";
             SendCommand(command);
-            SetOnOff(channel, true);
+            if (AutoUpdate)
+                SetOnOff(channel, true);
         }
 
         public override void SetOnOff(int channel, bool mode)

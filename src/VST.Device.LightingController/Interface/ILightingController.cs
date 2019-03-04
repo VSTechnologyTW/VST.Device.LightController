@@ -68,6 +68,7 @@ namespace VST.Device.LightingController
         EventHandler<string> CommandSent { get; set; }
         string HostName { get; }
         int Delay { get; }
+        bool AutoUpdate { get; set; }
         bool IsConnected { get; }
         string ModelName { get; }
         StrobeModes StrobeMode { get; }

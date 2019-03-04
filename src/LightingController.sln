@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS232LightingController_Sam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EthernetLightingController_Sample", "Sample\EthernetLightingController_Sample\EthernetLightingController_Sample.csproj", "{6CECE296-9A2A-4ABA-828F-893423898AE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightingControllerProvider_Sample", "Sample\LightingControllerProvider_Sample\LightingControllerProvider_Sample.csproj", "{6F3E560A-9F16-4C4E-9375-B457F97ACA83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{6CECE296-9A2A-4ABA-828F-893423898AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CECE296-9A2A-4ABA-828F-893423898AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CECE296-9A2A-4ABA-828F-893423898AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F3E560A-9F16-4C4E-9375-B457F97ACA83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3E560A-9F16-4C4E-9375-B457F97ACA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3E560A-9F16-4C4E-9375-B457F97ACA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3E560A-9F16-4C4E-9375-B457F97ACA83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1269BD2E-7323-4708-A3D3-CA7660BCB148} = {BCDCEFC4-E6F4-4760-A3A7-B23922978513}
 		{6CECE296-9A2A-4ABA-828F-893423898AE3} = {BCDCEFC4-E6F4-4760-A3A7-B23922978513}
+		{6F3E560A-9F16-4C4E-9375-B457F97ACA83} = {BCDCEFC4-E6F4-4760-A3A7-B23922978513}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F8E2B50-7317-4215-9B0E-4D97B58C2799}
