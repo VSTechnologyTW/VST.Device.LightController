@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Rs232LightingController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Rs232LightingController
+   ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="VST.Device.LightingController.Rs232LightingController">
+  
+  
+  <h1 id="VST_Device_LightingController_Rs232LightingController" data-uid="VST.Device.LightingController.Rs232LightingController" class="text-break">Class Rs232LightingController
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html">DefaultLightingController</a></div>
+    <div class="level2"><span class="xref">Rs232LightingController</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="VST.Device.LightingController.ILightingController.html">ILightingController</a></div>
+    <div><a class="xref" href="VST.Device.LightingController.IInitialize.html">IInitialize</a></div>
+    <div><a class="xref" href="VST.Device.LightingController.IRS232.html">IRS232</a></div>
+    <div><a class="xref" href="VST.Device.LightingController.ICommunicationInterfaces.html">ICommunicationInterfaces</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController__channelControllers">DefaultLightingController._channelControllers</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_strobeMode">DefaultLightingController.strobeMode</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_ModelName">DefaultLightingController.ModelName</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_StrobeMode">DefaultLightingController.StrobeMode</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_Item_System_Int32_">DefaultLightingController.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_ChannelCount">DefaultLightingController.ChannelCount</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_CommandHeaderStr">DefaultLightingController.CommandHeaderStr</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_CommandEndStr">DefaultLightingController.CommandEndStr</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_SetIntensity_VST_Device_LightingController_IChannelController_System_Int32_">DefaultLightingController.SetIntensity(IChannelController, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_SetStrobeMode_VST_Device_LightingController_IChannelController_VST_Device_LightingController_StrobeModes_">DefaultLightingController.SetStrobeMode(IChannelController, StrobeModes)</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_SetOnOff_VST_Device_LightingController_IChannelController_System_Boolean_">DefaultLightingController.SetOnOff(IChannelController, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_CheckSum_System_String_">DefaultLightingController.CheckSum(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VST.Device.LightingController.html">VST.Device.LightingController</a></h6>
+  <h6><strong>Assembly</strong>: VST.Device.LightingController.dll</h6>
+  <h5 id="VST_Device_LightingController_Rs232LightingController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Rs232LightingController : DefaultLightingController, ILightingController, IInitialize, IRS232, ICommunicationInterfaces</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController__ctor_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.%23ctor(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L15">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController__ctor_" data-uid="VST.Device.LightingController.Rs232LightingController.#ctor*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController__ctor_System_String_System_Int32_" data-uid="VST.Device.LightingController.Rs232LightingController.#ctor(System.String,System.Int32)">Rs232LightingController(String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rs232LightingController(string modelName, int channels = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">modelName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">channels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_CommandSent.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.CommandSent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L26">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_CommandSent_" data-uid="VST.Device.LightingController.Rs232LightingController.CommandSent*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_CommandSent" data-uid="VST.Device.LightingController.Rs232LightingController.CommandSent">CommandSent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override EventHandler&lt;string&gt; CommandSent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_CommandSent">DefaultLightingController.CommandSent</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_CommunicationInterface.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.CommunicationInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L23">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_CommunicationInterface_" data-uid="VST.Device.LightingController.Rs232LightingController.CommunicationInterface*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_CommunicationInterface" data-uid="VST.Device.LightingController.Rs232LightingController.CommunicationInterface">CommunicationInterface</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override CommunicationInterfaces CommunicationInterface { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VST.Device.LightingController.CommunicationInterfaces.html">CommunicationInterfaces</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_CommunicationInterface">DefaultLightingController.CommunicationInterface</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_Delay.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.Delay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L28">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_Delay_" data-uid="VST.Device.LightingController.Rs232LightingController.Delay*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_Delay" data-uid="VST.Device.LightingController.Rs232LightingController.Delay">Delay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Delay { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_Delay">DefaultLightingController.Delay</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_HostName.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.HostName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L27">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_HostName_" data-uid="VST.Device.LightingController.Rs232LightingController.HostName*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_HostName" data-uid="VST.Device.LightingController.Rs232LightingController.HostName">HostName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string HostName { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_HostName">DefaultLightingController.HostName</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_IsConnected.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.IsConnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L21">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_IsConnected_" data-uid="VST.Device.LightingController.Rs232LightingController.IsConnected*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_IsConnected" data-uid="VST.Device.LightingController.Rs232LightingController.IsConnected">IsConnected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsConnected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_IsConnected">DefaultLightingController.IsConnected</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_Port.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.Port%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L30">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_Port_" data-uid="VST.Device.LightingController.Rs232LightingController.Port*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_Port" data-uid="VST.Device.LightingController.Rs232LightingController.Port">Port</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerialPort Port { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Ports.SerialPort</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_Close.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L48">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_Close_" data-uid="VST.Device.LightingController.Rs232LightingController.Close*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_Close" data-uid="VST.Device.LightingController.Rs232LightingController.Close">Close()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Close()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_Close">DefaultLightingController.Close()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_Initialize.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L87">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_Initialize_" data-uid="VST.Device.LightingController.Rs232LightingController.Initialize*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_Initialize" data-uid="VST.Device.LightingController.Rs232LightingController.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_Initialize">DefaultLightingController.Initialize()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_Open_System_String_.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.Open(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L32">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_Open_" data-uid="VST.Device.LightingController.Rs232LightingController.Open*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_Open_System_String_" data-uid="VST.Device.LightingController.Rs232LightingController.Open(System.String)">Open(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Open(string portName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">portName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_Open_System_String_">DefaultLightingController.Open(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_SendCommand_System_String_.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.SendCommand(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L54">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_SendCommand_" data-uid="VST.Device.LightingController.Rs232LightingController.SendCommand*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_SendCommand_System_String_" data-uid="VST.Device.LightingController.Rs232LightingController.SendCommand(System.String)">SendCommand(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SendCommand(string command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_SendCommand_System_String_">DefaultLightingController.SendCommand(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_SetIntensity_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.SetIntensity(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L62">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_SetIntensity_" data-uid="VST.Device.LightingController.Rs232LightingController.SetIntensity*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_SetIntensity_System_Int32_System_Int32_" data-uid="VST.Device.LightingController.Rs232LightingController.SetIntensity(System.Int32,System.Int32)">SetIntensity(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetIntensity(int channel, int intensity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">intensity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_SetIntensity_System_Int32_System_Int32_">DefaultLightingController.SetIntensity(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_SetOnOff_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.SetOnOff(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L79">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_SetOnOff_" data-uid="VST.Device.LightingController.Rs232LightingController.SetOnOff*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_SetOnOff_System_Int32_System_Boolean_" data-uid="VST.Device.LightingController.Rs232LightingController.SetOnOff(System.Int32,System.Boolean)">SetOnOff(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetOnOff(int channel, bool mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_SetOnOff_System_Int32_System_Boolean_">DefaultLightingController.SetOnOff(Int32, Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController_SetStrobeMode_System_Int32_VST_Device_LightingController_StrobeModes_.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController.SetStrobeMode(System.Int32%2CVST.Device.LightingController.StrobeModes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L70">View Source</a>
+  </span>
+  <a id="VST_Device_LightingController_Rs232LightingController_SetStrobeMode_" data-uid="VST.Device.LightingController.Rs232LightingController.SetStrobeMode*"></a>
+  <h4 id="VST_Device_LightingController_Rs232LightingController_SetStrobeMode_System_Int32_VST_Device_LightingController_StrobeModes_" data-uid="VST.Device.LightingController.Rs232LightingController.SetStrobeMode(System.Int32,VST.Device.LightingController.StrobeModes)">SetStrobeMode(Int32, StrobeModes)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetStrobeMode(int channel, StrobeModes mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VST.Device.LightingController.StrobeModes.html">StrobeModes</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VST.Device.LightingController.DefaultLightingController.html#VST_Device_LightingController_DefaultLightingController_SetStrobeMode_System_Int32_VST_Device_LightingController_StrobeModes_">DefaultLightingController.SetStrobeMode(Int32, StrobeModes)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="VST.Device.LightingController.ILightingController.html">ILightingController</a>
+  </div>
+  <div>
+      <a class="xref" href="VST.Device.LightingController.IInitialize.html">IInitialize</a>
+  </div>
+  <div>
+      <a class="xref" href="VST.Device.LightingController.IRS232.html">IRS232</a>
+  </div>
+  <div>
+      <a class="xref" href="VST.Device.LightingController.ICommunicationInterfaces.html">ICommunicationInterfaces</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/new/gh-pages/apiSpec/new?filename=VST_Device_LightingController_Rs232LightingController.md&amp;value=---%0Auid%3A%20VST.Device.LightingController.Rs232LightingController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/src/VST.Device.LightingController/RS232LightingController.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2019 <strong>VST Taiwan</strong></span>
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

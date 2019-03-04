@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#20989;&#24335;&#24235;&#20351;&#29992;&#26041;&#27861; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#20989;&#24335;&#24235;&#20351;&#29992;&#26041;&#27861; ">
+    <meta name="generator" content="docfx 2.40.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="函式庫使用方法">函式庫使用方法</h1>
+
+<hr>
+<p>在函式庫中包含<code>EthernetLightingController</code>與<code>Rs232LightingController</code>類別，分別提供Ethernet與RS232通訊介面的控制器控制方法。</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>在使用以下功能前，務必確保PC端的設定已經穩當並將控制器改為外部設定，請參考文件<a href="%E9%80%9A%E8%A8%8A%E4%BB%8B%E9%9D%A2%E8%A8%AD%E5%AE%9A.html">通訊介面設定</a></p>
+</div>
+<p><code>EthernetLightingController</code>與<code>Rs232LightingController</code>都繼承了<code>ILightingController</code>介面，此介面包含了以下功能:</p>
+<ul>
+<li>Open(string host)</li>
+<li>Close()</li>
+<li>SendCommand(string command)</li>
+<li>SetIntensity(int channel, int intensity)</li>
+<li>SetIntensity(IChannelController channel, int intensity)</li>
+<li>SetStrobeMode(int channel, StrobeModes mode)</li>
+<li>SetStrobeMode(IChannelController channel, StrobeModes mode)</li>
+<li>SetOnOff(int channel, bool mode)</li>
+<li>SetOnOff(IChannelController channel, bool mode)</li>
+<li>CheckSum(string command)</li>
+</ul>
+<h2 id="建立controller">建立Controller</h2>
+<p>建立LightController有三種方法:</p>
+<ol>
+<li>建立Rs232LightingController(RS232介面)</li>
+<li>建立EthernetLightingController(Ethernet介面)</li>
+<li>從LightingControllerProvider獲取</li>
+</ol>
+<p>以VLP-2430-2控制器為例，以下將示範初始化控制器物件並設定:</p>
+<blockquote>
+<pre><code class="lang-cs">ILightingController controller = new Rs232LightingController(&quot;VLP-2430-2&quot;, 2);
+controller.Open(&quot;COM1&quot;);                    // 開啟通道
+controller.SetIntensity(0, 255);            // 將channel 0的光源亮度值設為255
+controller.SetStrobeMode(0, StrobeModes.F1) // 將channel 0的Strobe Mode設為F1
+controller.SetOnOff(0, true);               // 將channel 0設為啟用
+</code></pre>
+</blockquote>
+<p>以VLP-2460-4eN控制器為例，以下將示範初始化控制器物件並設定:</p>
+<blockquote>
+<pre><code class="lang-cs">ILightingController controller = new EthernetLightingController(&quot;VLP-2460-4eN&quot;, 4);
+controller.Open(&quot;192.168.11.20&quot;);           // 開啟通道
+controller.SetIntensity(0, 255);            // 將channel 0的光源亮度值設為255
+controller.SetStrobeMode(0, StrobeModes.F1) // 將channel 0的Strobe Mode設為F1
+controller.SetOnOff(0, true);               // 將channel 0設為啟用
+</code></pre>
+</blockquote>
+<p>函式庫內提供了LightingControllerProvider，可以直接透過型號取得控制器物件:</p>
+<blockquote>
+<pre><code class="lang-cs">ILightingController controller = LightingControllerProvider.GetController(&quot;VLP-2460-4eN&quot;);
+controller.Open(&quot;192.168.11.20&quot;);           // 開啟通道
+controller.SetIntensity(0, 255);            // 將channel 0的光源亮度值設為255
+controller.SetStrobeMode(0, StrobeModes.F1) // 將channel 0的Strobe Mode設為F1
+controller.SetOnOff(0, true);               // 將channel 0設為啟用
+</code></pre>
+</blockquote>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>在下SetIntensity指令後，亮度並不會立刻改變，更新的值會在下一次ON的時候改變，因此必須再下SetOnOff指令去更新控制器內部的參數。另外，也可以透過設定AutoUpdate這個屬性，讓更改完參數後自動更新控制器內部參數。</p>
+</div>
+<p>AutoUpdate屬性使用方法:</p>
+<blockquote>
+<pre><code class="lang-cs">// AutoUpdate = false
+controller.SetIntensity(0, 255);// 不會立刻更新亮度
+controller.SetOnOff(0, true);// 重新啟動Channel並更新亮度
+// Autoupdate = true
+controller.AutoUpdate = true;
+controller.SetIntensity(0, 255); // 設定新值後重新啟動Channel並更新亮度
+</code></pre>
+</blockquote>
+<h2 id="change-ip">Change IP</h2>
+<p><code>EthernetLightingController</code>提供了改變控制器IP的方法，請參考以下程式碼:</p>
+<blockquote>
+<pre><code class="lang-cs">EthernetLightingController controller = new EthernetLightingController(&quot;VLP-2460-4eN&quot;, 4);
+controller.ChangeIP(&quot;192.168.11.21&quot;);        // 改變控制器IP
+</code></pre>
+</blockquote>
+<p>設定新IP後必續重新啟動控制器才會生效，重開控制器後必須要使用新的IP連入。</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>ChangeIP中的IP有嚴謹的規範，必須符合&quot;192.168.11.xxx&quot;的模板，xxx的部分為0~255。</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/VSTechnologyTW/VST.Device.LightingController/blob/gh-pages/docfx/tutorial/&#20989;&#24335;&#24235;&#20351;&#29992;&#26041;&#27861;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2019 <strong>VST Taiwan</strong></span>
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
