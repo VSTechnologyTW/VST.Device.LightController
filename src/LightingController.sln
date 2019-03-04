@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VST.Device.LightingControll
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74A99B9C-2BF2-46F8-AFA2-C97D8C03BE29}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{BCDCEFC4-E6F4-4760-A3A7-B23922978513}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS232LightingController_Sample", "Sample\RS232LightingController_Sample\RS232LightingController_Sample.csproj", "{1269BD2E-7323-4708-A3D3-CA7660BCB148}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,9 +21,16 @@ Global
 		{F791CA33-64DD-451F-B792-328AE315095E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F791CA33-64DD-451F-B792-328AE315095E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F791CA33-64DD-451F-B792-328AE315095E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1269BD2E-7323-4708-A3D3-CA7660BCB148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1269BD2E-7323-4708-A3D3-CA7660BCB148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1269BD2E-7323-4708-A3D3-CA7660BCB148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1269BD2E-7323-4708-A3D3-CA7660BCB148}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1269BD2E-7323-4708-A3D3-CA7660BCB148} = {BCDCEFC4-E6F4-4760-A3A7-B23922978513}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F8E2B50-7317-4215-9B0E-4D97B58C2799}
